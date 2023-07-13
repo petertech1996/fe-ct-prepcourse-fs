@@ -5,17 +5,23 @@ function sonIguales(x, y) {
    // Retorna true si "x" e "y" son iguales.
    // De lo contrario, retorna false.
    // Tu código:
-   return x == 'y';
-   return x === 'y';
+   if (x === y) {
+      return (true)
+   } else{
+      return(false)
+   }
 }
 
 function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
-   return str1 == str2;
-   return str1 === str2;
+   if (str1.length === str2.length) {
+      return (true);
+   }else (str1.length != str2.length);
+   return (false);
 }
+ 
 
 function menosQueNoventa(num) {
    // Retorna true si el argumento "num" es menor que noventa.
@@ -29,17 +35,19 @@ function mayorQueCincuenta(num) {
    // De lo contrario, retorna false.
    // Tu código:
    return num >50;
+   
 }
 
 function esPar(num) {
    // Retorna true si "num" es par.
    // De lo contrario, retorna false.
    // Tu código:
-   if (num === 'espar') {
-      return (true);
-   } else if(num != 'espar') {
+   if (num % 2 ===0) {
+      return(true);
+   }else {
       return (false);
    }
+
 }
 
 function esImpar(num) {
